@@ -18,6 +18,7 @@ $data = json_decode(file_get_contents("php://input"));
 // Determine the HTTP method
 $method = $_SERVER['REQUEST_METHOD'];
 
+//API response se recebe o metodo post ou delete
 if ($method == 'POST') {
     // Create post
     $post->title = $data->title;
